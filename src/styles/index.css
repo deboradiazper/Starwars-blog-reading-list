@@ -1,3 +1,44 @@
 /* 
     General Styles
 */
+.scroll-container {
+    overflow-x: scroll;
+  }
+
+  body {
+    background-image: url(https://cinni.net/images/web/bg/movestarbackground.gif);
+    font-family: 'Karla', sans-serif;
+
+  }
+
+  .text1 {
+    font-family: 'Karla', sans-serif;
+  }
+
+
+
+  .card-img-top {
+    width: 100%;
+    height: auto;
+  }
+  .footer{
+    height: 150px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150px; 
+}
+.navbar{
+  height: 150px;
+}
+.card-img{
+  height: 100%;
+  width: 90%;
+}
+
+
+
+    
+
+  
+      
