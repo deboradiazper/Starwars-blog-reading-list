@@ -16,6 +16,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			characters: [],
             planets: [],
             vehicles: [],
+            species: [],
             favorites: [],
             disable: false,
             index: 0,
@@ -51,6 +52,13 @@ const getState = ({ getStore, getActions, setStore }) => {
                     .then((response) => response.json())
                     .then((data) => setStore({
                         vehicles: data.results
+                    }));
+            },
+            loadSpecies: () => {
+                fetch("https://www.swapi.tech/api/species/")
+                    .then((response) => response.json())
+                    .then((data) => setStore({
+                        species: data.results
                     }));
             },
 

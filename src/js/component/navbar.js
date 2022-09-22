@@ -21,16 +21,16 @@ export const Navbar = () => {
           {store.favorites.length != 0 ? (
             <button
               type="button"
-              class="btn btn-light dropdown-toggle"
+              class="btn dropdown-toggle"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              	 ♥<span className="px-2">{store.favorites.length}</span>
+              <i className="fas fa-heart text-light"></i><span className="px-2 text-light">{store.favorites.length}</span>
             </button>
           ) : (
             <button
               type="button"
-              class="btn btn-light dropdown-toggle"
+              class="btn dropdown-toggle text-light"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >

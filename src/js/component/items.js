@@ -7,7 +7,6 @@ import Details from "../views/details";
 const Items = (props) => {
 
   const { store, actions } = useContext(Context);
-  const [ click , setClick ] = useState(false);
   const handleClick = () => {actions.addFavorites(props.name)
   }
   return (
@@ -15,7 +14,7 @@ const Items = (props) => {
       <div className="card border-0">
         <img src={`https://starwars-visualguide.com/assets/img/${props.type}/${props.uid}.jpg`} className="card-img-top rounded mx-auto d-block" alt="..." />
         <div className="card-body">
-          <h5 className="card-title">{props.name}</h5>
+          <h4 className="card-title">{props.name}</h4>
           <p className="card-text"></p>
           <div className="card-body d-flex justify-content-between">
           <Link to={`details/${props.category}/${props.uid}`} className="btn btn-dark mt-2">Read more</Link>

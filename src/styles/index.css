@@ -1,41 +1,67 @@
 /* 
     General Styles
 */
+
+body {
+  background-image: url(https://cinni.net/images/web/bg/movestarbackground.gif);
+  font-family: 'JetBrains Mono', monospace;
+
+}
+
+/* Scrollbar */
+
 .scroll-container {
     overflow-x: scroll;
   }
 
-  body {
-    background-image: url(https://cinni.net/images/web/bg/movestarbackground.gif);
-    font-family: 'Karla', sans-serif;
-
-  }
-
-  .text1 {
-    font-family: 'Karla', sans-serif;
-  }
-
-
-
-  .card-img-top {
-    width: 100%;
-    height: auto;
-  }
-  .footer{
-    height: 150px;
-    width: auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 150px; 
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
 }
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  color: #FFFFFF;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #FFFFFF;
+}
+
+::-webkit-scrollbar-corner {
+  background: #FFFFFF;
+}
+
+/* navbar */
+
 .navbar{
   height: 150px;
 }
 .card-img{
   height: 100%;
-  width: 90%;
+  width: 80%;
 }
 
+  
+/* Card */
+
+  .card-title {
+    font-family: 'Chakra Petch', sans-serif;  
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Card details */
+
+  .card-img{
+    height: 100%;
+    width: 90%;
+  }
+  
 
 
     

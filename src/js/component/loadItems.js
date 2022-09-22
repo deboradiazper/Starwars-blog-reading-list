@@ -11,7 +11,7 @@ const LoadItems = () => {
       <div className="scroll-container d-flex">
         {store.characters.map((items, index) => {
           return (
-            <div className="col-12 col-md-3 px-3 characters">
+            <div className="col-12 col-md-3 px-3 mb-3 characters">
               <Items
                 name={items.name}
                 uid={items.uid}
@@ -22,16 +22,16 @@ const LoadItems = () => {
           );
         })}
       </div>
-      <h2 className="text1 text-light py-4">Planets</h2>
+      <h2 className="text1 text-light py-4">Species</h2>
       <div className="scroll-container d-flex">
-        {store.planets.map((items, index) => {
+        {store.species.map((items, index) => {
           return (
-            <div className="col-12 col-md-3 px-3 characters">
+            <div className="col-12 col-md-3 px-3 mb-3 characters">
               <Items
                 name={items.name}
                 uid={items.uid}
-                type={"planets"}
-                category={"planets"}
+                type={"species"}
+                category={"species"}
               />
             </div>
           );
@@ -41,12 +41,27 @@ const LoadItems = () => {
       <div className="scroll-container d-flex">
         {store.vehicles.map((items, index) => {
           return (
-            <div className="col-12 col-md-3 px-3 mb-3">
+            <div className="col-12 col-md-3 px-3 mb-1">
               <Items
                 name={items.name}
                 uid={items.uid}
                 type={"vehicles"}
                 category={"vehicles"}
+              />
+            </div>
+          );
+        })}
+      </div>
+      <h2 className="text1 text-light py-4">Planets</h2>
+      <div className="scroll-container d-flex">
+        {store.planets.map((items, index) => {
+          return (
+            <div className="col-12 col-md-3 px-3 mb-3 characters">
+              <Items
+                name={items.name}
+                uid={items.uid}
+                type={"planets"}
+                category={"planets"}
               />
             </div>
           );

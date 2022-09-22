@@ -1,5 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
+
 
 const Detail = (props) => {
   
@@ -11,15 +13,18 @@ const Detail = (props) => {
         </div>
         <div className="col-md-6">
           <div className="card-body">
-            <h3 className="card-title pt-5">{props.name}</h3>
-            <p>{props.description}</p>
+            <h3 className="card-title pt-5 pb-3">{props.name}</h3>
             <ul>
               {
                 Object.keys(props.properties).map((element, index) =>{
-                  return <li key={index}>{element}: {props.properties[element]}</li>
+                  return <p key={index}>{element}: {props.properties[element]}</p>
+                  
                 })
               }
             </ul>
+            <Link to={"/"}>
+              <p className="back pt-4 text-center">back</p>
+            </Link>
           </div>
         </div>
       </div>
